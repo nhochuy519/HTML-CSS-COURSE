@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Position Practice
+        </title>
+    </head>
+    <body style="
+        height: 3000px;
+        padding-top: 60px;
+        padding-left: 80px;
+    ">
+        <!--Position : static ; (vị trí tĩnh)  (default)-->
+        <!--Position : fixed (vị trí cố định) (placed in the browser window:được đặt trong cửa sổ trình duyệt, không di chuyển khi ta cuộn trang );vị trí cố định  khi ta scroll:(cuộn) thì element được thiết lập thuộc tính position:xed sẽ luôn cố định một chỗ và phần tử đó sẽ không còn chiếm một không gian trên trình duyệt nữa -->
+        <!--Position có 4 thuộc tính top left rigth mid và các thuộc tính này sẽ thay đổi kích thước tuỳ thuộc vào lúc ta kéo size
+            để dữ nguyên kích thước khi kéo trang ta dùng các thuộc tính heigt và width-->
+        <!--Posision: absolute(vị trí tuyệt đối)(placed on the page:được đặt trong trang , di chuyển khi ta cuộn trang) ;vị trí tuyệt đối nằm im đúng chỗ mà ta thiết lập-->    
+        <!--Position : relative (vị trí tương đối) vị trí tương đối vần hiển thị vị trí phần tử như bình thường như bình thường-->
+
+        <!--(z-index): giúp ta thiết lập thứ tự xếp chồng nhau theo chiều z số lớn hơn sẽ chồng lên trước bé hơn sẽ bị chồng mậc định z-index giá trị của mỗi phần tử là bằng 0-->
+        <!--nếu một phần tử được viết bên dưới một phần tử khác thì phần tử được viết bên dưới sẽ xuất hiện trước
+            nhưng quy tắc này không được áp dung cho posision : static chỉ áp dụng cho các position khác-->
+        <div style="
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0px;
+            height: 50px;
+            left: 0px;
+            right: 0px;
+            z-index:1 ;
+        ">
+        header</div>
+        <div style="
+            background-color: green;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 50px;
+            bottom: 0;
+            width: 72px;
+            
+        ">
+            sidebar
+            <div style="
+            position:absolute ;
+            background-color:red;
+            color: white;
+            top: 0px;
+            right: 0px
+        ">
+            x
+        </div>
+        </div>
+        
+        <div style="
+            position:absolute ;
+            background-color:red;
+            color: white;
+            top: 60px;
+            right: 10px
+        ">
+            absolute
+        </div>
+
+        <div style="
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            position: static;
+        ">div 1</div>
+
+        
+        <div style="
+            background-color: lightpink;
+            width: 200px;
+            height: 200px; 
+            position: relative;
+        ">div 2
+            <div style="
+            position:absolute ;
+            background-color:black;
+            color: white;
+            bottom: 10px;
+            right: 10px
+        ">
+            5:00
+        </div>
+        </div>
+    </body>
+</html>

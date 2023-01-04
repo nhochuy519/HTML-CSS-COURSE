@@ -1,0 +1,60 @@
+.list-friend {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+} 
+p {
+    font-family: Roboto,Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.profile {
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+.infor {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.pic-friend {
+    width: 30px;
+    height: 30px;
+    border-radius: 21px;
+    object-fit: cover;
+    
+}
+.friends {
+    color: rgb(97, 97, 97);
+}
+.cat-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 5px;
+
+}
+.name {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+.button-Add {
+    margin-left: 10px;
+    background-color: rgb(29, 155, 240);
+    border: none;
+    border-radius: 6px;
+    color:white;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}

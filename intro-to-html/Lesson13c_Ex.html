@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lesson13c
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+             p {
+                font-family: Roboto,Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .flexbox {
+                margin-top: 20px;
+                margin-left: 20px;
+                
+                width: 400px;
+                padding-top: 10px;
+                padding-left: 15px;
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+            }
+            .start {
+                margin-bottom: 20px;
+                color: gray;
+            }
+            .end {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-bottom: 25px;
+                padding-right: 20px;
+            }
+            
+            .cat-pic {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-right: 10px;
+            }
+            .infor {
+                flex: 1;
+            }
+            .infor-promo {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                
+                
+            }
+            .name-promo {
+                font-size: 18px;
+                font-weight: bold;
+
+            }
+            .time {
+                color: gray;
+                font-size: 14px;
+            }
+            .big-sale {
+                font-weight: bold;
+                margin-bottom: 3px;
+            }
+            .writing {
+                color: gray;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <p class="start">
+                ALL INBOXES
+            </p>
+            <div class="end">
+
+                <img class="cat-pic"src="cat.jpg">
+                
+                <div class="infor">
+                    <div class="infor-promo">
+                        <p class="name-promo">
+                            Chewy Promotions 
+                        </p>
+                        <p class="time">
+                            4:58 PM
+                        </p>
+                    </div>
+                    <div>
+                        <p class="big-sale">
+                            Biggest sales of the year!
+                        </p>
+                        <p class="writing">
+                            Hey there! We're writing to tell you about our...
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="end">
+
+                <img class="cat-pic"src="dog.jpg">
+                
+                <div class="infor">
+                    <div class="infor-promo">
+                        <p class="name-promo">
+                            Best Buy
+                        </p>
+                        <p class="time">
+                            12:32 PM
+                        </p>
+                    </div>
+                    <div>
+                        <p class="big-sale">
+                            Your Best Buy eReceipt
+                        </p>
+                        <p class="writing">
+                            Thank you for shopping at Best Buy, here is...
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="end">
+
+                <img class="cat-pic"src="cat2.jpg">
+                
+                <div class="infor">
+                    <div class="infor-promo">
+                        <p class="name-promo">
+                            Netflix
+                        </p>
+                        <p class="time">
+                            9:00 PM
+                        </p>
+                    </div>
+                    <div>
+                        <p class="big-sale">
+                            Here's what's coming soon to Netflix
+                        </p>
+                        <p class="writing">
+                            Brand new movies and shows, old favorites...
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

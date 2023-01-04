@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table , th , td {
+            border:1px solid black;
+            border-collapse:collapse;/*  Đường viền của bảng & đường viền của các ô được gộp lại thành một.*/
+
+        }
+        th {
+            background-color: lightblue;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2> Bảng thông tin </h2>
+    <table style="width: 100%;">
+        <tr><!-- đinh nghĩa một hàng (hàng đầu tiên)--><!-- tr viết tắt cho table row (hàng)-->
+            <th><!--Ô thứ nhất của Dòng đầu tiên--><!-- Viết tắt cho tabler header tiêu đề bảng-->
+                Họ và tên
+            </th>
+            <th><!-- Ô thứ hai của dòng đầu tiên-->
+                Ngày sinh
+            </th>
+            <th><!-- Ô thứ ba của dòng đầu tiên-->
+                Quốc tịch
+            </th>
+        </tr>
+        <tr><!-- Hàng thứ hai-->
+            <td><!-- Ô thứ nhất-->  <!-- td viêt tắt cho từ table data dữ liểu bảng-->
+                Phan minh huy
+            </td>
+            <td>
+                20/9/2003
+            </td>
+            <td>
+                Việt Nam
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nishinomiya Konomi
+            </td>
+            <td>
+                21/2/1997
+            </td>
+            <td>
+                Nhật bản
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

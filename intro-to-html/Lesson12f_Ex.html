@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lesson12f
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+            div {
+                font-family: Roboto;
+            }
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                background-color: rgb(116, 55, 169);
+            }
+            .home {
+                color: white;
+                margin-left: 20px;
+                font-weight: 500;
+            }
+            .mid {
+                max-width: 700px;
+                flex: 1;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .search-bar {
+                width: 100%;
+                padding-left: 15px;
+                padding-top: 5px;
+                padding-right: 15px;
+                padding-bottom: 5px;
+                border-radius: 50px;
+                border:none;
+
+            }
+            .btt {
+                margin-right: 20px;
+            }
+            .btt-dow {
+                background-color: rgb(116, 55, 169);
+                color: white;
+                border-color: white;
+                border-style: solid;
+                border-width: 1px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                cursor: pointer;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="home">
+                Home
+            </div>
+            <div class="mid">
+                <input class ="search-bar"type="text" placeholder="Search">
+            </div>
+            <div class="btt">
+                <button class="btt-dow">
+                    Download
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

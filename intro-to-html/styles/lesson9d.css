@@ -1,0 +1,27 @@
+div{
+    background-color: rgb(57, 57, 57);
+    width: 300px;
+    width: 450px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+p{
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.Install{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+.add{
+    font-size: 20px;
+    color: rgb(208, 208, 208);
+    
+
+}

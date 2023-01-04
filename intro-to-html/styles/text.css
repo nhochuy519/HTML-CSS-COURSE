@@ -1,0 +1,83 @@
+p{/*Đăt tắt cả các text thành dạng kiểu chữ Arial cách này sẽ rút gọn code hơn.Đây còn được gọi là bộ chọn*/
+    font-family: Roboto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*Vì sao ta đặt thuộc tính margin của các text p là margin-botton =0  nhưng khi chạy chương trình vẵn ưu tiên chạy margin mà ta đã gán cho class target vì đấy được gọi là tính cụ thể (CSS specificity) .Selector target nào nhắm đến một class cụ thể sẽ có mức đọ ưu tiên hơn selector không nhắm đến class 
+Quy tắc cụ thể của CSS
+Đây là tập hợp đầy đủ các Quy tắc cụ thể của CSS (bạn không cần phải ghi nhớ tất cả các quy tắc này).
+Thông thường, bạn chỉ cần biết một vài quy tắc hữu ích và tìm kiếm thêm trên Google nếu cần:
+1. CSS nội tuyến(inline) có mức độ ưu tiên cao hơn bộ chọn .class.
+2. Bộ chọn .class có mức độ ưu tiên cao hơn bộ chọn tên phần tử (p).
+3. Bộ chọn tên phần tử (p) có mức độ ưu tiên cao hơn phần tử kế thừa (từ phần thân)(body).
+4. Nếu 2 bộ chọn có cùng mức độ ưu tiên thì bộ chọn nào viết sau sẽ thắng. 
+CSS Specificity Rules
+Here's the full set of CSS Specificity Rules (you don't need to memorise all of these).
+Usually, you just need to know a few useful rules and search Google for more if needed:
+1. Inline CSS has higher priority than .class selectors.
+2. .class selectors have higher priority than element name selectors (p).
+3. Element name selectors (p) have higher priority than inheritance (from body).
+4. If 2 selectors have the same priority, the one that is written later wins.
+
+*/
+
+/*Class name selector > element name selector*/
+.video-title{/*Đây cũng được gọi là selector(bộ chọn) nhưng nhắm đến (target) từng class cụ thể*/
+    /*font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;/*làm cho phông chữ đậm hơn*/zz
+    /*font-style: italic; /*italic:CHữ nghiêng*/
+    /*text-align: center;/*aligh: căn chỉnh*/
+
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;/*làm cho dòng chữ xuống dòng*/
+    line-height: 24px;/*Thiết lập khoảng cách của các dòng*/
+    /*Do đoạn văn mặc định trong hệ thống có margin(lề) nên ta phải chỉnh margin về giá trị không để có thể tuỳ chỉnh margin mà mình mong muốn*/
+    margin-bottom: 5px;
+}
+.video-stats{
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 20px;
+}
+.video-author{
+    font-size: 14px;
+    color:  #606060;
+    margin-bottom: 20px;
+}
+.video-description{
+    font-size: 14px;
+    width: 284px;
+    color: #606060;
+    line-height: 20px;
+    margin-bottom: 100px;
+}
+.apple-text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: #e34140;
+    color: white;
+    padding-left:16px ;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom:16px ;
+    width: 284px;
+    text-align: center;
+    line-height: 20px;
+
+}
+.span-example{
+    color :red;
+    margin-left: 12px;
+}
+.span-example:hover{
+    text-decoration: underline;
+}
+.span-shop{
+    cursor: pointer;
+    margin-left: 12px;
+}
+.span-shop:hover{
+    text-decoration: underline;/*decoration : thiết lập sự xuất hiện của các dòng trang trí trên văn bản*/
+}                                                                                   

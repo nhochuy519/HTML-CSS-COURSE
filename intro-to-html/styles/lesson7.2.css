@@ -1,0 +1,13 @@
+.searchGG{
+    width: 500px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}

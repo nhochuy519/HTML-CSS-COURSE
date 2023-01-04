@@ -1,0 +1,147 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    background-color: white;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 300;
+   
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    flex-shrink: 0;
+    
+}
+.hamburger {
+    height: 25px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.ytbe {
+    height: 22px;
+    
+}
+.middle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    max-width: 690px;
+    justify-content: center;
+    
+
+}
+.search-bar {
+    flex: 1;
+    height: 40.1px;
+    padding-left: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 194, 194);
+    font-size: 16px;
+    width: 0px;
+    
+}
+.search-bar::placeholder {
+    font-size: 16px;
+    
+    
+}
+
+.search-btt {
+    margin-left: -1px;
+    height: 44.1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(244, 244, 244);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(194, 194, 194);
+    border-top-right-radius:22px ;
+    border-bottom-right-radius:22px ;
+    margin-right: 10px;
+}
+.search-btt img  {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.voice-search-btt {
+    height: inherit;
+    height: 44.1px;
+    width: 44.1px;
+    border-radius: 22px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.voice-search-btt img {
+    height: 25px;
+    
+}
+.upload-icon {
+    height: 25px;
+}
+.notifications {
+    height: 30px;
+}
+.avatar {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.voice-search-btt,.search-btt,.relative-pic{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ab-search,.ab-voice-search,.up,.mess {
+    font-family: Roboto,Arial;
+    position: absolute;
+    top: 75px;
+    font-size: 12px;
+    background-color: rgba(63, 63, 63, 0.8);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    white-space: nowrap;
+    
+    
+    
+}
+
+
+
+.voice-search-btt:hover .ab-voice-search,
+.search-btt:hover .ab-search,
+.relative-pic:hover .up,
+.relative-pic:hover .mess{
+    opacity: 1;
+}

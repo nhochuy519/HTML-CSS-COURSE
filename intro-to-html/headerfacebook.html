@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .header {
+                display: flex;
+                justify-content: space-between;
+                height: 60px;
+                box-shadow: 0px 1px 2px rgba(0,0,0, 0.2);
+            }
+            .left {
+                display: flex;
+                align-items: center;
+                width: 350px;
+                
+            }
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-shrink: 0;
+                width: 200px;
+                margin-right: 25px;
+            }
+            .fb-icon {
+                width: 40px;
+                height: 40px;
+                margin-left: 15px;
+                margin-right: 10px;
+            }
+            
+            .mid {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 50px;
+                margin-right: 50px;
+                flex: 1;
+                max-width: 530px;
+                width: 0;
+                
+            }
+            .btt-fb {
+                
+                background-color:white;
+                border: none;
+                
+            }
+            .icon-home,.icon-friend,.icon-watch,.icon-market,.icon-many-friend {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 35px;
+                
+            }
+            .icon-right{
+                width: 44px;
+                height: 44px;
+                object-fit: 44px;
+                border-radius: 35px;
+            }
+            .pic-cat {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 35px;
+            }
+
+            .icon-friend
+            {
+                margin-top: 2px;
+            }
+            .icon-watch
+            {
+                margin-top: 4px;
+            }
+            .icon-market {
+                margin-bottom: 4px;
+            }
+            .icon-many-friend {
+                margin-bottom: 4px;
+            }
+            .search-fb {
+                height: 40px;
+                background-color: rgb(241, 241, 241);
+                border-radius: 23px;
+                border: none;
+                flex: 1;
+                padding-left: 10px;
+                width: 0;
+                font-size: 16px;
+            }
+            .search-fb::placeholder {
+                font-family: Arial;
+                font-size: 16px;
+            }
+            
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left">
+                <img class="fb-icon"src="icons/2021_Facebook_icon.svg.png">
+                <input class="search-fb"type="text" placeholder="&#128269; Tìm kiếm trên facebook">
+            </div>
+            <div class="mid">
+                <button class="btt-fb">
+                    <img  class="icon-home"src="icons/home.png">
+                </button >
+                <button class="btt-fb">
+                    <img  class="icon-friend" src="icons/friend.png">
+                </button>
+                <button class="btt-fb">
+                    <img class="icon-watch" src="icons/watch.png">
+                </button>
+                <button class="btt-fb">
+                    <img  class="icon-market" src="icons/market.png">
+                </button>
+                <button class="btt-fb">
+                    <img  class="icon-many-friend" src="icons/manyfriend.png">
+                </button>
+            </div>
+            <div class="right">
+                <button class="btt-fb">
+                    <img class="icon-right" src="icons/menu.png" >
+                </button >
+                <button class="btt-fb">
+                    <img class="icon-right" src="icons/message.png" >
+                </button>
+                <button class="btt-fb">
+                    <img class="icon-right" src="icons/notification.png" >
+                </button>
+                <button class="btt-fb">
+                    <img class="pic-cat"src="cat.jpg" >
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

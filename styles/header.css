@@ -1,0 +1,178 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    border-bottom-width : 1px ;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(218, 218, 218) ;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    
+    
+
+
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 25px;
+}
+.youtube-logo {
+    height: 20px;
+}
+
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px; /* kích thước chiều rộng lớn nhất trong khoảng flex 1*/
+    align-items: center;/*Chỉ khi có display flex thì ta mói có thể dùng alight-item */
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;/*điều chỉnh phông chữ khi nhấn tìm kiếm*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0 ,0 ,0 , 0.05);/*bóng bên trong thanh tim kiếm*/
+    /*do mỗi thanh search đều có chiều rộng mặc định nên khi co lại đến mức nào đó nó sẽ trả về chiều rộng mặc định của nó nên phải thiết lập width về 0 */
+    width: 0px;
+}
+.search-bar::placeholder { /*điều chỉnh phông chữ trong thanh tìm kiếm placeholder*/
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+
+
+.search-button {
+    height: 40px;
+    width: 66px;
+    background-color: rgb(230, 230, 230);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    margin-left: -1px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    
+}
+.search-button ,
+.voice-search-button ,
+.upload-icon-container,
+.notifications-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ .search-button .tooltip,
+ .voice-search-button .tooltip,
+ .upload-icon-container .tooltip,
+ .notifications-icon-container .tooltip {
+    font-family: Roboto,Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none; /*Vô hiệu hoá khi di chuyển chuột qua tooltip*/
+    white-space: nowrap; /*Bỏ dấu xuống dòng*/
+    
+    
+}
+.search-button:hover .tooltip ,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
+}
+
+.search-icon { /*nút tìm kiếm*/
+    height: 25px;
+
+    
+    
+}
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(243, 243, 243);
+    position: relative;
+}
+.voice-search-icon {/*nút tìm kiếm bằng giọng nói*/
+    height: 24px;
+
+    
+}
+
+.right-section {
+    width: 180px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;/*ngăn không cho cái icon trong rigth co lại(shrink) lại gần nhau mà sẽ giữ khoảng cách giống ban đầu*/
+    /*shrick: co lại*/
+}
+.upload-icon {
+    height: 24px;
+}
+.youtube-apps-icon {
+    height: 24px;
+}
+.notifications-icon {
+    height: 24px;
+}
+.notifications-count {
+    font-family: Roboto,Arial;
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    background-color: rgb(197, 3, 3);
+    color: white;
+    font-size: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+.current-user-icon {
+    height: 32px;
+    border-radius: 16px;
+}
+.notifications-icon-container {
+    position: relative;
+
+}
+

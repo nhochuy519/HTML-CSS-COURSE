@@ -1,0 +1,30 @@
+input{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;      
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgb(173, 173, 173);
+    margin-bottom: 10px;
+}
+.type1,.type2{
+    width: 100px;
+}
+.type3{
+    display: block;
+    width: 225px;
+}
+.sign-up{
+    background-color: rgb(35, 143, 245);
+    color: white;
+    width: 245px;
+    border: none;
+    border-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}

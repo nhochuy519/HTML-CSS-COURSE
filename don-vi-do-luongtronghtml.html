@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Đơn vị đo trong html</title>
+    
+    <style>
+        #px {
+            width: 300px;
+            height: 250px;
+            background-color: red;
+            margin-bottom: 20px;
+
+        }
+        .pt {
+            width: 72pt;
+            height: 144pt;
+            background-color: lightcoral;
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 500px;
+            height: 400px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+        .child {
+            width: 50%;
+            height: 50%;
+            background-color: lightcoral;
+            
+        }
+
+
+        .em {
+            font-size: 16px;
+            background-color: lightcoral;
+            margin-bottom: 20px;
+        }
+        .huy1 {
+            font-size: 2em;
+        }    
+
+        .child2 {
+           
+            width: 4em;
+            height: 4em;
+            background-color: lightblue;
+        }
+        .em3 {
+            font-size: 16px;
+            background-color: lightcoral;
+            margin-bottom: 20px;
+        }
+
+        .child3 {
+           
+            width: 4em;
+            height: 4em;
+            background-color: lightblue;
+        }
+        .huy2 {
+            font-size: 32px;
+        }
+
+
+
+        /* Đơn vị rem*/
+
+        html {
+            font-size: 16px;
+        }
+        .container-rem {
+            width: 25rem;
+            background-color: blue;
+
+        }
+        .rem-child {
+            width: 5rem;
+            height: 5rem;
+            background-color: red;
+        }
+        .huy3 {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Trong css có 2 kiểu đơn vị đo chính là 
+        - Đơn vị đo tuyệt đối( absolute Units) là các đơn vị vật lý được đỉnh nghĩa sẵn trong máy tính
+            Có hai loại đơn vị tuyệt đối
+            -px
+            -pt(point) cứ 72pt = 1 ich  1 ich = 96px
+
+        - Đơn vị đo tương đối (relative Units) là các đơn vị sẽ bị biến đổi bởi một thành phần khác hoặc thành phần mẹ
+            -%
+            -em
+            ( Là đơn vị tham chiếu thuộc tính font size của phần tử mẹ
+                vd: bạn có một cái khung bạn đặt cái font size cho nó là 19px thì trong cái khung đó cứ 1 em là 19 px
+                )
+            -rem
+            (
+                nghĩa là đơn vị này sẽ tham chiếu dến thuộc tính font size của phần tử lớn nhất trong website tức là phâng tử html
+
+                Nếu mà các bạn đặt phần font size cho phần tử html này là 16px 
+                thì trong website của các bạn cứ 1 rem là 16px
+            )
+
+
+    
+    -->
+    <div id="px">px</div>
+
+    
+    <div class="pt">pt</div>
+    <div class="box">
+        <div class="child">%</div>
+    </div>
+
+    <div class="em">
+        <div class="child2">em</div>
+        <div class="huy1">huy</div>
+    </div>
+
+    <div class="em3">
+        <div class="child3">em</div>
+        <div class="huy2">huy</div>
+    </div>
+
+
+    <div class="container-rem">
+        <div class="rem-child">1</div>
+        <div class="huy3">
+            huy
+        </div>
+    </div>
+</body>
+</html>

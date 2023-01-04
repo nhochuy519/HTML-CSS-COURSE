@@ -1,0 +1,204 @@
+
+.thumbnail{
+    width: 100%;
+    /*display: block; do đã thiết lập chiều rộng của tấm hình là chiếm 100% toàn bộ nên ta sẽ không cần thuộc tính này nữa*/
+    
+}
+
+.video-tittle{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}       
+
+.video-preview{
+    /*width: 300px;ta không cần thuộc tính này vì nêu thiết lập thuộc tính này thì khoảng không gian chỉ chiếm 300px không thể chiếm toàn bộ khung chứa khi phóng to*/
+   /* display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;*/
+    
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+/*.video-author{
+    display: inline-block;
+}
+.video-stats{
+    display: inline-block;
+}*/
+/*cách nhanh hơn*/
+/*.video-author,
+.video-stats{
+    display: block;
+}*/
+        
+/*.channel-picture{
+    background-color: gray;
+    
+}
+.video-info{
+    background-color: gray;
+}*/
+.profile-picture{
+    /*width: 100%;/*chiếm toàn bộ không gian đó*/
+    width: 36px;
+    border-radius: 50px;
+}
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+    
+}
+.video-author,
+.video-stats{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author{
+    margin-bottom: 4px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    
+}
+/*final lesson : responsive : thiết kế đáp ứng */
+/*media(truy vấn) ta thiết lập media với chiều rộng là 600px và các css trong đó chỉ hoạt động trong phạm vi 600px trở xuống*/
+/*
+ @media (max-width:470px) {
+        .video-grid {
+            grid-template-columns: 1fr;
+        }
+        
+    }
+    @media (min-width:470px) {
+        .video-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+    }
+    @media (min-width:840px)
+    {
+        .video-grid {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width:1000px) {
+        .video-grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            max-width: 2000px;
+            
+        }
+    }
+*/
+@media (max-width:750px)  {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:751px) and (max-width:999px)
+{
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media (min-width:1000px)  {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*
+    Một số css Shorthand phím tắt css
+    padding: (top,bot) (left, right)
+    padding: top right bottom left
+    margin tương tự với padding
+
+    border : width style color
+
+*/
+
+
+
+
+
+.video-time {
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+    /*padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;*/
+    /*padding: (top,bot) (left, right)*/
+    /*padding: top right bottom left  (cả margin và padding đều giống nhau)*/
+    padding: 4px ;/*đây được gọi là css Shorthand Properties phím tắt css giúp code trong gọn hơn*/
+    border-radius: 2px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 8px;
+    right: 5px
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.channel-picture .hover {
+    z-index: 50;
+    display: flex;
+    background-color: white;
+    position:absolute;
+    top: 45px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    width: 200px;
+    opacity: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    font-family: Roboto;
+    pointer-events: none;
+    transition: opacity 0.13s;
+    
+    
+}
+.channel-picture:hover .hover {
+    opacity: 1;
+}
+.pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    margin-right: 10px;
+}
+.name {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.sub {
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+}
+
+@media (min-width:1000px) {
+    .video-tittle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .video-author,.video-stats {
+        font-size: 14px;
+    }
+}

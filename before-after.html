@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Before và after trong css</title>
+        <!--Before là thêm vào trước và after thì thêm vào sau-->
+        <!-- Đê before hoạt động thì băt buộc phải có thuộc tính content-->
+        <!-- content :" nội dung(có hoặc không) " -->
+        <link rel="stylesheet" href="">
+        <style>
+            div {
+                position: relative;
+            }
+            div:before {
+                content: "";
+                position: absolute;
+                background-color: red;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                transition: 0.25s;
+                z-index: -1;/* cho xuất hiện sau chữ toi ten la phan minh huy*/
+            }
+            div:hover:before {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div >
+            Tôi tên là Phan Minh Huy
+        </div>
+
+
+
+        <i>
+            thẻ element này đinh nghĩa một phần văn bản hiển thị in nghiêng
+        </i>
+    </body>
+</html>

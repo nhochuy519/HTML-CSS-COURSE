@@ -1,0 +1,161 @@
+
+
+#header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 50px;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid rgb(229, 229, 229);
+    z-index: 1;
+    
+}
+#header-main img {
+    height: 20px;
+    
+}
+#avt-middle {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+#tweet {
+    padding: 0 15px;
+    display: flex;
+    
+    border-right: 1px solid rgb(229, 229, 229);
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+#tweet div {
+    flex: 1;
+}
+#what-happen {
+    padding: 11px 0;
+    width: 100%;
+    border: none;
+    font-size: 19px;
+}
+#what-happen::placeholder {
+    font-size: 19px;
+}
+#what-happen:focus
+{
+    outline: none;
+}
+#icon-twee-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+#all-icon img {
+    height: 15px;
+}
+#all-icon {
+    display: grid;
+    grid-template-columns: 24px 24px 24px 24px 24px 24px;
+    column-gap: 10px;
+    margin-right: 15px;
+}
+#btt-tweet-main {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+#hide-more {
+    width: 100%;
+    background-color: white;
+    border-right: 1px solid rgb(229, 229, 229);
+
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    color: rgb(29, 155, 240);
+    padding: 16px;
+    transition: background-color 0.5s;
+}
+
+#hide-more:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+/* Phần tweet*/
+.flex-user-tw {
+    padding: 10px 15px;
+    display: flex;
+    border-right: 1px solid rgb(229, 229, 229);
+    border-bottom: 1px solid rgb(229, 229, 229);
+
+}
+.user {
+    padding-right: 10px;
+}
+.baidang {
+    flex: 1;
+}
+.flex-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name,.title {
+    font-size: 14px;
+    
+}
+.name {
+    margin-bottom:5px;
+    font-weight: bold;
+}
+.name2 {
+    color: rgb(113, 113, 113);
+    font-weight: normal;
+}
+.title {
+    margin-bottom: 15px;
+}
+.pic-user {
+    height: 45px;
+    width:45px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.pic-tweet {
+    height: 500px;
+    width: 380px;
+    border-radius: 12px;
+}
+
+.cmt-share-like-dow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 450px;
+    margin-top: 10px;
+}
+.cmt-share-like-dow img {
+    height: 18px;
+    
+}
+.flex-icon {
+    display: flex;
+    align-items: center;
+    
+}
+.flex-icon div {
+    font-size: 12px;
+    margin-left: 10px;
+    color:  rgb(113, 113, 113);;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- đọc thêm về flexbox tại đây https://viblo.asia/p/tim-hieu-ve-flexbox-trong-css-gGJ59Qjj5X2-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/flex?retiredLocale=vi-->
+    <style>
+        .container {
+            background: red;
+            max-width: 960px;
+            max-height: 1000px;
+            margin: 0 auto;
+            padding: 5px;
+            
+
+            display: flex;
+            /*flex-direction: column; hiện thị theo cột*/
+            flex-direction: row;/* Hiện thị theo hàng*/
+            /*row(hoặc column)-reverse hiện thị theo cột hoặc hàng theo chiều ngược lại*/
+            /*flex-wrap: wrap;*/
+            /* khi chưa thiết lập flex-wrap thì mặc định flex của container sẽ điều chỉnh các element trong container phù hợp vói kích thước đã thiết lập của container
+            
+                - Còn nếu như thiết lập flex-wrap như trên thì các element trong container sẽ tràn xuóng mà không tràn ra bên ngoài thùng chứa
+            */
+            
+        }
+        .container div {
+            background: blue;
+            margin: 5px;
+            color: white;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            width: 1000px;
+        }
+
+        .div1 {
+           /* order: 6;/* Điều chỉnh thứ tự các element trong container*/
+        }
+
+        /* Flex-wrap*/
+
+        .container div {
+            width: 50px;
+        }
+
+        .div2 {
+            /*flex-grow: 1;
+            /* Khi ta thiết lập như trên thì nó sẽ lấy khoảng trống kích thước của container để đấp vào element bên trong container mà ta đã thiết lâp thuộc tính như trên*/
+        }
+        .div1 {
+            /*flex-grow: 2;*/
+        }
+        div {
+            flex-shrink: 0;
+        }
+        
+        
+        
+        /* short hand của flex
+            - Với một giá trị flex
+                flex: (flex-grow) hoặc flex:(flex-basis)
+            - Với hai giá trị
+                flex (flex-grow) (flex-basis)
+            -với 3 giá trị
+                flex (flex-grow) (flex-shrink) (flex-basis)
+        */
+        .container2 {
+            display: flex;
+            background-color: lightblue;
+            max-width: 500px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        .div7 {
+            background-color: lightcoral;
+            flex:1 1 20%;/* Thiết lập kích thước bằng đơn vị đo dùng flex-basis */
+            
+            /* flex-basis thiết lập kích thước cho element với container có display là flex */
+
+        }
+        .div8 {
+            background-color: lightpink;
+            flex: 1 1 20%;
+            
+        }
+        .div7-5 {
+            background-color: azure;
+            flex: 1 1 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+    </div>
+    <div class="container2">
+        <div class="div7">7</div>
+        <div class="div7-5">7-5</div>
+        <div class="div8">8</div>
+    </div>
+</body>
+</html>

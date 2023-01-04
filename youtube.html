@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube.com Clone</title>
+        <style>
+            .thumbnail{
+                /*width: 300px;/*Khi đặt chiều rộng thì chiều cao cũng thay đổi*/
+                /*height: 300px;
+                /*object-fit: Thuộc tính này cho biết nội dung cần lấp đầy vùng chứa theo nhiều cách khác nhau; chẳng hạn như "giữ nguyên tỷ lệ khung hình đó" hoặc "mở rộng và chiếm nhiều dung lượng nhất có thể".*/
+                /*object-fit: cover*?;/*Cover-Hình ảnh giữ nguyên tỷ lệ co và lấp đầy kích thước đã cho. Hình ảnh sẽ được cắt bớt để vừa*/
+                /*object-fit: contain;/*giữ hình ảnh , phóng to thu nhỏ sao cho phù hợp với kích thước, phạm ci của  box*/
+                /*THuộc tính object-position di chuyên lên xuống trái phải trong phạm vi kích thước box (chiều dài và chiều rộng của box đã thiết lập từ đầu*/
+                /*object-position:bottom;/*qua trái qua phải ành position: ví trí*/
+                /*Thiết lập biên giới (box)tạo style khung viền cho ảnh*/
+                /*border-style: solid;
+                border-width: 2px;
+                border-color: red;/*Tuỳ chỉnh màu cho khung viền*/
+                width: 300px;
+                
+            }
+            .search-bar{
+                font-size:20px ;
+                margin-left: 20px;
+
+                
+            }
+        </style>
+    </head>
+    <body>
+        <img class ="thumbnail" src="thumbnails/thumbnail-1 (1).webp"><!--Đây cũng là môt void element, là không cần thẻ đóng  dấu / (slash : gạch chéo)-->
+        <!--attribute(thuộc tính)  src này cho máy tính biết hình ảnh nào để hiển thị trên trang wed-->
+
+        <!--Tạo một thanh tìm kiếm-->
+        <input class="search-bar" type="text" placeholder="Search"><!--Tạo ra khung text box, input cũng là một void element-->
+        <!-- Tác dụng của place holder: trình giữ chỗ,(giữ chỗ) là cung cấp thông tin cho người dùng giúp họ biết cần nhập dữ liệu gì hoặc bât cứ thông báo nào bạn muốn-->
+        <!--attribute thuộc tính placehoder "search " in thông tin, chữ lên thanh text của type cho biết người dùng cần nhâp dữ liệu gì -->
+        <!--<input type="checkbox"><!--Tạo ra check box-->
+        
+        <p>
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p>
+            Marques Brownlee
+        </p>
+        <p>
+            3.4M views &#183; 6 months ago
+        </p>
+    </body>
+</html>

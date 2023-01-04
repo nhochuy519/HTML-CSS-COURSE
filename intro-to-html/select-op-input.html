@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="radio">
+        "Nam"<!--ô tròn -->
+        <input type="checkbox">
+        "Nữ"<!--ô vuông-->
+        <input type="password" placeholder="mật khẩu">
+        <!--Kiểu điền pass sẽ không hiện mật khẩu khi ta nhập-->
+        <input type="submit">
+        <!-- xác đinh một nút để gửi đi dữ liệu trong form tới bộ xủ lý form-->
+        <!--Lựa chọn trong html-->
+        <!-- Select options-->
+        <!-- id không được đặt trùng nhau-->
+        
+
+        <!-- Label và control liên kết với nhau bằng thuộc tính id của control-->
+        <!-- Ví dụ element inout thiết lập id là name_info thì label sẽ liên kết bằng cách thêm thuộc tính for="name-info"-->
+        <!-- khi ta chuột phải dòng chữ trong label có liên kết  với input thông qua for và id 
+        thì focus sẽ bắt đầu focus tại ô textbox có id cùng với for và -->
+        <label for="name_info">
+            Xin vui long nhap ten cua ban
+        </label>
+        <input type="text" id="name_info">
+
+        <label for="sex">
+            Xin vui lòng nhập gới tính  của bạn
+        </label>
+
+        <select name="" id="sex">
+            <option value="">Lựa chọn giới tính</option>
+            <option value="">Nam</option>
+            <option value="">Nữ</option>
+            <option value="" selected>Không xác định</option>
+            <!--Có từ khoá selected tì phần tử đó sẽ xuất hiện đầu tiên-->
+        </select>
+         
+    </body>
+</html>

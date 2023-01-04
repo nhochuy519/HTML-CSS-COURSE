@@ -1,0 +1,73 @@
+.subscribe-button{ /*Đây được gọi là CSS selector : Cho phép bạn nhắm đen mục tiêu tới các phần tử(element) HTML để áp dụng các thuộc tính CSS cho chúng
+    đọc thêm ơ đây https://kiencang.net/bo-chon-hay-selector-trong-css/ */
+    background-color: rgb(200, 0, 0)   ; /*background-color (Được gọi là CSS property)* red(được gọi là CSS value)*/
+    color: white; /*Thay đổi màu chữ button*/
+    border: none; /*border:khung viền (Thay đổi khung viền)*/
+    /*height: 36px; /*Thay đổi chiều cao*/
+    /*width: 105px; /*Thay đổi chiều rộng*/
+    padding-top: 10px;/*Padding: đệm (Tăng kích thước bên trong button) kỹ thuật này được gọi là CSS box model*/
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;/*Bo tròn 4 góc (border radius:Bán kính khung viền)*/
+    cursor: pointer; /*Thay đổi con trỏ ki trỏ vào nút buttons*/
+    font-family: Arial;
+    /*Để có không gian các chữ (Space(around an element)) Hay còn được gọi là margin*/
+    margin-right:30px ;/*margin : lề*/
+    margin-left: 20px;
+    transition: opacity 0.15s;/*làm mượt khi chuyển đổi di chuột vào*/ /*transition : giá trị cần chuyển đổi  -tốc độ*/
+    vertical-align: top;/*Do trình duyệt bắt đầu đo các button dụa trên vị tri mặc định đầu tiên của văn bản .Dùng pp này có thể đo theo kiểu vị trí của button mà không cần đo theo vị trí văn bản di chuyên cả button Sub này lên vị trí top cao nhất của nút button */
+}
+/*Pseudo-Class: lớp giả , là kiểu hiệu ứng khi rê chuột , con trỏ di chuyển qua button*/
+.subscribe-button:hover{/*Tao hiệu ứng di chuyển qua nút button  hover: di chuyển qua hover style: các kiêu di chuyển*/
+    /*background-color: green;*/
+    opacity: 0.8;/*opacity : độ mờ 1 là đậm như bình thường dưới 1 sẽ bắt đầu mờ đi con bằng 0 là mất hẳn*/
+}
+.subscribe-button:active{/*active :kích hoạt hiệu ứng khi được clink chuột vào một element button*/
+   /* background-color: blue;*/
+    opacity: 0.3;
+}
+
+.join-button{
+    background-color: white;
+    color: #065fd4;
+    border-color: #065fd4; /*Màu viền*/
+    border-style: solid;/*Viền nét liền thông thường*/
+    border-width: 1px; /*Kích thước pixel của khung viền*/
+    /*height: 36px;
+    width: 60;*/
+
+    border-radius: 2px;
+    text-align: center; /*Chỉnh vị trí chữ viết*/
+    cursor: pointer;
+    font-family: Arial; /*Kiểu chữ*/
+    margin-right:8px ;
+    transition: background-color 0.15s;
+        color: 0.15s;
+}
+.join-button:hover{
+    background-color: #065fd4;
+    color: white;
+}
+.tweet-button{
+    background-color: #1d9bf0;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 35px;
+    font-size: 15px;/*Cỡ chữ*/
+    font-weight:700 ;/*Trọng lượng phông chữ*/
+    /*font-weight : bolđ*/
+    cursor: pointer;
+    margin-right:8px ;
+    text-align: center ;
+    transition: box-shadow 0.3s;
+    vertical-align: top;
+}
+.tweet-button:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /*box-shadow (vị trí nằm ngang bên phải) (vị trí thằng đứng đi xuống dưới) (độ  pixel càng cao càng mờ)  rgb hoặc rgba (màu của bóng)   rgba(red , green,blue, độ mờ(opacity))*/
+}
+.tweet-button:active{
+    opacity: 0.5;
+}

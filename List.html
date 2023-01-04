@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List: danh sách trong html</title>
+
+    <style>
+        /* Có thể thay đổi style của các thẻ ul là ol*/
+        ul {
+            list-style-type: circle;/* Hình tròn trước các lựa chọn*/
+        }
+        ul {
+            list-style-type: square;/* Ô vuông trước các lựa chọn*/
+        }
+        ul {
+            list-style-type: upper-roman;/*Số thứ tự bằng la mã*/
+        }
+        ul {
+            list-style-type: lower-alpha;/* thứ tự các chữ cái*/
+            list-style-position: inside;/* đẩy các lựa chọn vào bên trong*/
+            /* list-style-position có 2 giá trị là outside và inside*/
+            /* outside là giá trị mặc định*/
+            
+
+
+            list-style-image: url(twitter/dinhvi.png);/* Cũng có thể chèn ảnh vào đằng trước các list hay thẻ l*/
+        }
+        li {
+            border-style: solid;
+            border-width: 1px;
+            margin-bottom: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ul viết tắt của từ unordered list (danh sách không có thứ tự)-->
+    <ul>
+        <li>táo</li>
+        <li> mận</li>
+        <li> ổi</li>
+        <li> xoài</li>
+        <li> dưa hấu</li>
+    </ul>
+    <!-- ol viết tắt của từ ordered list (danh sách có thứ tự)-->
+    <ol> <!-- THẻ danh sách có thứ tự-->
+        <li>táo</li>
+        <li> mận</li>
+        <li> ổi</li>
+        <li> xoài</li>
+        <li> dưa hấu</li>
+        
+    </ol>
+</body>
+</html>

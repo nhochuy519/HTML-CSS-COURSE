@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+    </head>
+    <body style="padding-bottom:1000px">
+        <!--Lesson12 flexbox : flexbox(hộp linh hoạt) tương tự như grid(lưới) nhưng linh hoạt hơn
+            Cách để biến một contenair thành một flexbox ta làm như sau
+            Bến trong một flex các div không hoạt động như một block mà sẽ hoạt động như một inline block
+
+            flex-direction: row  ; sắp xếp các div theo chiều ngang 
+            flex 1; chiếm toàn bộ dòng còn lại giống 1fr bên bài grid             
+            
+            grid:rigid layout bố cục cứng nhắc
+            flexible layout bố cục linh hoạt 
+            layout : cách trình bày-->
+        <div style="
+            display: flex;
+            flex-direction: row ;
+        ">
+            <div style="background-color: lightblue;">div 1 text</div>
+            <div style="background-color: lightpink;">div 2 <p>text</p></div>
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row ;
+        ">
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+            <div style="
+                background-color: lightpink;
+                flex: 1;
+            ">flex 1</div>
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+        ">
+            <div style="
+                background-color: lightblue;
+                flex: 1;
+            ">flex 1</div>
+            <div style="
+            background-color: lightpink;
+            width: 100px;
+            ">100px </div>
+            <div style="
+                background-color: lightblue;
+                flex: 2;
+            ">flex 2</div>
+        </div>
+        <!--justify-content: start; căn các phần tử về bên trái
+            justify-content: end; căn các phần tử về bên phải
+            justify-content: center; căn các phần tử ở chính giữa
+            justify-content: space-between; sắp xếp trái giữa phải đồng đều có khoảng cách
+            xem thêm tại link dưới
+            https://viblo.asia/p/hieu-them-ve-justify-content-trong-flexbox-qua-loat-anh-gif-gGJ59bjpKX2
+
+            align-items: stretch; căn chỉnh các item mặc định là stretch(kéo dài để lắp đầy không gian thẳng đứng)
+            align-items: start;(sẽ không còn kéo dài đến không gian thẳng đứng chúng sẽ chiếm nhiều không gian theo chiều dọc cần thiết và được đặt ở trên cùng (Top))
+            align-items: end; đặt ở cuối
+            align-items: center; đặt ở giữa -->
+        <div style="
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        ">
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+            <div style="
+                background-color: lightpink;
+                width: 100px;
+            ">100px </div>
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        ">
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+            <div style="
+                background-color: lightpink;
+                width: 100px;
+            ">100px </div>
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        ">
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+            <div style="
+                background-color: lightpink;
+                width: 100px;
+            ">100px </div>
+            <div style="
+                background-color: lightblue;
+                width: 100px;
+            ">100px</div>
+        </div>
+
+
+
+        <!-- space evenly khoảng cách ngoài trong đều như nhayu hay bằng nhau-->
+
+        <div style="
+        margin-top: 30px;
+        height: 200px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        
+        justify-content: space-evenly;
+        align-items: center;
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+        <div style="
+            background-color: lightpink;
+            width: 100px;
+        ">100px </div>
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+    </div>
+
+    <!-- space around chỉ có khoảng cách bên trong bằng nhau-->
+
+    <div style="
+        margin-top: 30px;
+        height: 200px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+        <div style="
+            background-color: lightpink;
+            width: 100px;
+        ">100px </div>
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+    </div>
+    </body>
+</html>

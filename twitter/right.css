@@ -1,0 +1,136 @@
+#right {
+    position: relative;
+    
+}
+#right i {
+    position: absolute;
+    font-size: 16px;
+    top: 17px;
+    left: 20px;
+}
+#right div {
+    width: 100%;
+    
+}
+#right input{
+    height: 40px;
+    width: 100%;
+    padding-left: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    font-size: 15px;
+}
+#search-twitter-user {
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
+    padding-bottom: 7px;
+    background-color: white;
+    padding-top: 5px;
+    
+}
+#right input:focus {
+    outline-color: rgb(29, 155, 240); ;
+    border:1 solid;
+}
+
+
+.xu-huong {
+    background-color: rgb(245, 245, 245) ;
+    border-radius: 12px;
+    
+    
+}
+h1 {
+    padding: 10px;
+}
+.xu-huong h1 {
+    padding-bottom: 20px;
+}
+.chu-de {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.chu-de div {
+    font-size: 12px;
+    color: gray;
+}
+.chu-de img {
+    height: 10px;
+    
+}
+h2 {
+    margin-bottom: 5px;
+}
+.view {
+    font-size: 12px;
+    color: gray;
+}
+.hastag {
+    padding: 10px;
+    transition: background-color 0.15s;
+}
+.hastag:hover {
+    background-color: rgb(238, 238, 238);
+}
+.show-more {
+    padding: 15px;
+    font-size: 14px;
+    color: rgb(29, 155, 240);
+    transition: background-color border 0.15s;
+}
+
+.show-more:hover {
+    background-color: rgb(238, 238, 238);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.goi-y {
+    margin-top: 20px;
+    background-color:rgb(245, 245, 245) ;
+    border-radius: 12px;
+}
+.friend {
+    padding: 10px 11px;
+    display: flex;
+    align-items: center;
+    transition: background-color border 0.15s;
+}
+.friend:hover {
+    background-color:  rgb(238, 238, 238);;
+}
+.friend img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.infor-fr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name-twitter {
+    font-size: 13px;
+    font-weight: bold;
+}
+.name-twitter2 {
+    font-size: 13px;
+}
+.allname {
+    width: 100%;
+}
+.friend button {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+    white-space: nowrap;
+    border-radius: 20px;
+    font-weight: bold;
+}

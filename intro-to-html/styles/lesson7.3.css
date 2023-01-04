@@ -1,0 +1,43 @@
+p{
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(121, 121, 121);
+}
+.email{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.accept{
+    width:330px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1.5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.by{
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+.agree-button{
+    font-size: 19px;
+    background-color: rgb(37, 109, 218);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 350px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.agree-button:hover{
+    opacity: 0.8;
+}
+.agree-button:active{
+    opacity: 0.5;
+}

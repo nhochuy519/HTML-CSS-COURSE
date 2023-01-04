@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        /* Thuộc tính flex-wrap có hai giá trị 
+            nowrap sẽ hiện thi như bình thường : nếu ta thiết lập giá trị này thì khi các phân thử vượt quá số lượng bên trong container chứa nó
+            thì sẽ ngay lập tức tràn ra ngoài
+
+            wrap thì ngược lại phần tử sẽ xuống  dòng mà không vượt quá kích thước của container chứa nó
+            wrap các item sẽ được bọc trong container
+
+
+            flex-flow là sự kết hợp của 2 thuộc tính của flex-direction và flex-wrap 
+            vd : flex-flow : row wrap
+        */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            width: 40px;
+            background-color: lightblue;
+        }
+        .div1 {
+            order: 6;/* Có thể đùng để thay đổi vị trí các phần tử flex*/
+        }
+        
+
+
+        /* flex-grow*/
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        
+    </header>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+              /* dấu sao này để dùng để chọn tất cả các phần tư trong html*/ 
+                
+            }
+            div {
+                width: 500px;
+                height: 500px;
+                padding: 20px;
+                background-color: lightblue;
+                border: 5px solid black;
+                display: inline-block;
+                margin-right:29px ;
+            }
+            .d1 {
+                box-sizing: content-box;
+            }
+            .d2 {
+                box-sizing: border-box;
+                /* tự đọng chia kích thước padding và border sao cho không vượt quá kích thước witdh và height đã thiết lập ban đầu/
+            }
+            .d3 {
+                box-sizing: padding-box;
+                /* chỉ có tác dụng với trình duyệt firefox*/
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            1
+        </div>
+        <div class="d2">
+            2
+        </div>
+        <div class="d3">
+            3
+        </div>
+    </body>
+</html>
